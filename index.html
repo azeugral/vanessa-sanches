@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vanessa Sanches · Nail Art pintada à mão</title>
+<meta name="description" content="Vanessa Sanches, nail artist especialista em unhas decoradas e pintadas à mão. Atendimento e formações na Blossom Beauty Academy, Amora.">
+<meta property="og:title" content="Vanessa Sanches · Nail Art pintada à mão">
+<meta property="og:description" content="Unhas decoradas à mão, manutenção com moldes F1 e formações na Blossom Beauty Academy, Amora.">
+<meta property="og:image" content="img/hero.webp">
+<meta name="theme-color" content="#f2ece4">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<style>
+:root{--papel:#f2ece4;--papel2:#e9e0d4;--cacau:#4b2d23;--cacau2:#3a221a;--tinta:#231a16;--cinza:#76675e;--rosa:#c98a7e;--fio:rgba(75,45,35,.16);
+--ease:cubic-bezier(.16,.84,.32,1);--g:clamp(16px,4vw,56px)}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 17px/1.65 Figtree,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:Gloock,Georgia,serif;font-weight:400;line-height:1.04;color:var(--cacau)}
+p{margin:0}
+.bt{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;font:600 15px/1 Figtree,sans-serif;letter-spacing:.02em;text-decoration:none;border:1.5px solid var(--cacau);border-radius:0;background:transparent;color:var(--cacau);cursor:pointer;
+  transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease)}
+.bt:hover{background:var(--cacau);color:var(--papel)}
+.bt:active{transform:scale(.97);transition-duration:.1s}
+.bt-cheio{background:var(--cacau);color:var(--papel)}
+.bt-cheio:hover{background:var(--cacau2);border-color:var(--cacau2)}
+.bt:focus-visible,.obra:focus-visible{outline:2px solid var(--rosa);outline-offset:3px}
+.chapeu{font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--rosa)}
+
+.topo{position:fixed;inset:0 0 auto;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:70px;padding:0 var(--g);background:rgba(242,236,228,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--fio)}
+.marca{font:400 22px/1 Gloock,serif;color:var(--cacau);text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:32px}
+.nav a{font-weight:500;font-size:15px;text-decoration:none;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;background:var(--rosa);transform:scaleX(0);transition:transform .3s var(--ease)}
+.nav a:hover::after{transform:scaleX(1)}
+.topo .bt{justify-self:end;min-height:42px;padding:0 18px;font-size:14px}
+
+/* hero: moldura em forma de unha amendoada, foto aplicada em três pinceladas */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(28px,6vw,96px);padding:110px var(--g) 64px;max-width:1320px;margin:0 auto}
+.hero-txt{display:flex;flex-direction:column;gap:22px;max-width:520px;justify-self:end}
+.hero h1{font-size:clamp(56px,7.6vw,112px);letter-spacing:-.01em}
+.hero-sub{font-size:clamp(17px,1.5vw,20px);max-width:32ch;color:#4a3d36}
+.acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.unha{justify-self:start;position:relative;width:min(100%,430px);aspect-ratio:3/4.3;padding:12px;border:1.5px solid var(--cacau);border-radius:50% 50% 0 0/36% 36% 0 0}
+.unha-in{position:relative;width:100%;height:100%;overflow:hidden;border-radius:50% 50% 0 0/35% 35% 0 0;background:var(--papel2)}
+.unha-in img{width:100%;height:100%;object-fit:cover}
+.pincel{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1.15fr 1fr}
+.pincel i{background:var(--papel2);transform-origin:50% 100%;animation:pinta .62s var(--ease) forwards}
+.pincel i:nth-child(1){animation-delay:.32s}.pincel i:nth-child(2){animation-delay:.12s}.pincel i:nth-child(3){animation-delay:.48s}
+@keyframes pinta{to{transform:scaleY(0)}}
+.unha-leg{position:absolute;left:0;right:0;bottom:-34px;text-align:center;font-size:13px;color:var(--cinza)}
+.hero-txt>*{opacity:0;transform:translateY(14px);animation:sobe .55s var(--ease) forwards}
+.hero-txt>:nth-child(2){animation-delay:.06s}.hero-txt>:nth-child(3){animation-delay:.12s}.hero-txt>:nth-child(4){animation-delay:.18s}
+@keyframes sobe{to{opacity:1;transform:none}}
+
+.sec{padding:clamp(72px,10vw,130px) var(--g)}
+.cab{text-align:center;max-width:680px;margin:0 auto clamp(36px,5vw,60px)}
+.cab h2{font-size:clamp(40px,5.2vw,68px)}
+.cab p{margin-top:16px;color:var(--cinza);font-size:18px}
+.papel2{background:var(--papel2)}
+.cacau{background:var(--cacau);color:#efe5da}
+.cacau h2,.cacau h3{color:#f6eee5}
+.cacau .cab p{color:#d4c2b4}
+
+.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,1vw,14px);max-width:1280px;margin:0 auto}
+.obra{position:relative;aspect-ratio:4/5;overflow:hidden;padding:0;border:0;background:var(--papel2);cursor:zoom-in;-webkit-tap-highlight-color:transparent}
+.obra img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);-webkit-user-drag:none;-webkit-touch-callout:none}
+.obra:hover img{transform:scale(1.035)}
+.mais{text-align:center;margin-top:40px}
+
+.tecnicas{display:grid;grid-template-columns:repeat(4,1fr);max-width:1140px;margin:0 auto;border-top:1.5px solid var(--cacau)}
+.tecnicas div{padding:28px clamp(14px,2vw,28px) 4px;text-align:center}
+.tecnicas div+div{border-left:1px solid var(--fio)}
+.tecnicas h3{font-size:27px;margin-bottom:10px}
+.tecnicas p{color:var(--cinza);font-size:16px}
+
+.sobre{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,90px);align-items:center;max-width:1180px;margin:0 auto}
+.sobre-foto{justify-self:end;width:min(100%,460px);aspect-ratio:4/5;overflow:hidden}
+.sobre-foto img{width:100%;height:100%;object-fit:cover}
+.sobre-txt{max-width:480px;display:flex;flex-direction:column;gap:18px}
+.sobre-txt h2{font-size:clamp(40px,5vw,64px)}
+.sobre-txt p{color:#e3d4c7}
+.cacau .chapeu{color:#e6b5aa}
+.cacau .bt{border-color:#f2ece4;color:#f2ece4}
+.cacau .bt:hover{background:#f2ece4;color:var(--cacau)}
+
+.cursos{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,22px);max-width:1180px;margin:0 auto}
+.curso{display:flex;flex-direction:column;gap:12px;padding:30px 28px;background:#fbf8f4;border:1px solid var(--fio);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.curso:hover{transform:translateY(-4px);box-shadow:0 22px 40px -28px rgba(75,45,35,.5)}
+.curso h3{font-size:28px}
+.curso p{color:#5b4c44;font-size:16px}
+.curso .tipo{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rosa)}
+.destaque{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;background:var(--cacau);border-color:var(--cacau)}
+.destaque img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/11}
+.destaque>div{display:flex;flex-direction:column;justify-content:center;gap:14px;padding:clamp(26px,4vw,52px)}
+.destaque h3{color:#f6eee5;font-size:clamp(30px,3.4vw,44px)}
+.destaque p{color:#e3d4c7}
+.destaque .tipo{color:#e6b5aa}
+.destaque .bt{align-self:flex-start;border-color:#f2ece4;color:#f2ece4;margin-top:6px}
+.destaque .bt:hover{background:#f2ece4;color:var(--cacau)}
+.cta{text-align:center;margin-top:44px}
+
+.contato{display:grid;grid-template-columns:repeat(3,1fr);max-width:1100px;margin:0 auto;text-align:center}
+.contato div{padding:10px 20px}
+.contato div+div{border-left:1px solid var(--fio)}
+.contato h3{font:600 13px/1 Figtree,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--rosa);margin-bottom:14px}
+.contato p{font-size:18px}
+.contato a{text-underline-offset:3px}
+
+.rodape{padding:34px var(--g);text-align:center;font-size:14px;color:var(--cinza);border-top:1px solid var(--fio)}
+.rodape .marca{font-size:28px;display:block;margin-bottom:10px}
+.rodape a{text-underline-offset:3px}
+
+.lb{position:fixed;inset:0;z-index:100;background:rgba(35,26,22,.96);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s var(--ease)}
+.lb.on{opacity:1}
+.lb img{max-width:min(92vw,1000px);max-height:86vh;object-fit:contain}
+.lb button{position:absolute;background:none;border:0;color:#f2ece4;font:400 15px Figtree,sans-serif;cursor:pointer;padding:16px}
+.lb .x{top:10px;right:10px}.lb .ant{left:6px;top:50%;transform:translateY(-50%);font-size:28px}.lb .prox{right:6px;top:50%;transform:translateY(-50%);font-size:28px}
+
+@media (max-width:980px){.grade{grid-template-columns:repeat(3,1fr)}.cursos{grid-template-columns:1fr 1fr}.destaque{grid-template-columns:1fr}}
+@media (max-width:900px){
+  .nav{display:none}
+  .topo{grid-template-columns:1fr auto}
+  .hero{grid-template-columns:1fr;padding-top:96px;text-align:center;gap:30px;padding-bottom:84px}
+  .hero-txt{justify-self:center;align-items:center}
+  .unha{justify-self:center;width:min(86%,380px)}
+  .hero-sub{margin:0 auto}
+  .acoes{justify-content:center}
+  .sobre{grid-template-columns:1fr;text-align:center}
+  .sobre-foto{justify-self:center}
+  .sobre-txt{margin:0 auto;align-items:center}
+  .tecnicas{grid-template-columns:1fr 1fr}
+  .tecnicas div:nth-child(3){border-left:0}
+  .tecnicas div:nth-child(n+3){border-top:1px solid var(--fio)}
+  .tecnicas div{padding-bottom:24px}
+  .contato{grid-template-columns:1fr}
+  .contato div+div{border-left:0;border-top:1px solid var(--fio)}
+  .contato div{padding:22px 10px}
+}
+@media (max-width:640px){.grade{grid-template-columns:repeat(2,1fr)}.cursos{grid-template-columns:1fr}.curso{text-align:center;align-items:center}.destaque .bt{align-self:center}.tecnicas h3{font-size:23px}.tecnicas p{font-size:15px}}
+@media (max-width:420px){.topo .bt{padding:0 14px}.marca{font-size:20px}.acoes .bt{flex:1 1 100%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}.pincel{display:none}}
+</style>
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="#inicio">Vanessa Sanches</a>
+  <nav class="nav"><a href="#trabalho">Trabalho</a><a href="#formacoes">Formações</a><a href="#sobre">Sobre</a><a href="#contacto">Contacto</a></nav>
+  <a class="bt bt-cheio" href="https://pt.zappysoftware.com/m/blossombeautyacademy" target="_blank" rel="noopener">Marcar</a>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-txt">
+    <span class="chapeu">Nail Artist · Amora</span>
+    <h1>Vanessa Sanches</h1>
+    <p class="hero-sub">Unhas decoradas e pintadas à mão, uma a uma, com o mesmo cuidado na preparação que no desenho.</p>
+    <div class="acoes">
+      <a class="bt bt-cheio" href="https://pt.zappysoftware.com/m/blossombeautyacademy" target="_blank" rel="noopener">Marcar atendimento</a>
+      <a class="bt" href="#formacoes">Ver formações</a>
+    </div>
+  </div>
+  <figure class="unha" style="margin:0">
+    <div class="unha-in">
+      <img src="img/hero.webp" alt="Nail art pintada à mão com pássaro e flores laranja em base nude" fetchpriority="high">
+      <div class="pincel" aria-hidden="true"><i></i><i></i><i></i></div>
+    </div>
+    <figcaption class="unha-leg">Pássaro e flores, pintados à mão</figcaption>
+  </figure>
+</section>
+
+<section class="sec papel2" id="trabalho">
+  <div class="cab"><h2>Trabalho</h2><p>Flores, animais, padrões de época e peças de competição. Tudo pintado à mão, sem autocolantes.</p></div>
+  <div class="grade" id="grade"></div>
+  <div class="mais"><a class="bt" href="https://www.instagram.com/vanessanches.nailartist/" target="_blank" rel="noopener">Mais no Instagram</a></div>
+</section>
+
+<section class="sec">
+  <div class="cab"><h2>Técnicas de pintura</h2><p>Cada técnica dá um acabamento diferente. Escolhemos a que serve melhor o desenho.</p></div>
+  <div class="tecnicas">
+    <div><h3>One Stroke</h3><p>Pétalas com luz e sombra numa só pincelada.</p></div>
+    <div><h3>Wet on Wet</h3><p>Cores fundidas ainda húmidas, efeito aguarela.</p></div>
+    <div><h3>Zhostovo</h3><p>Pintura floral russa, com camadas e brilho.</p></div>
+    <div><h3>Acrylic Paint</h3><p>Desenho livre e detalhe fino a tinta acrílica.</p></div>
+  </div>
+</section>
+
+<section class="sec cacau" id="sobre">
+  <div class="sobre">
+    <div class="sobre-foto"><img src="img/retrato.webp" alt="Retrato de Vanessa Sanches"></div>
+    <div class="sobre-txt">
+      <span class="chapeu">Sobre</span>
+      <h2>Excelência e verdade em mesa</h2>
+      <p>A Vanessa é especialista em nail art e fundadora da Blossom Beauty Academy, em Amora. O desenho à mão livre é a paixão dela, e foi com ele que venceu o desafio das borboletas da Comunidade Nde.</p>
+      <p>Na mesa, a base vem primeiro: cutícula limpa, estrutura com moldes F1 e manutenção que dura. As fotos mostram o resultado real, sem edição.</p>
+      <div><a class="bt" href="https://www.instagram.com/blossom.beautyacademy/" target="_blank" rel="noopener">Blossom Beauty Academy</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="formacoes">
+  <div class="cab"><h2>Formações</h2><p>Turmas pequenas na Blossom Beauty Academy, com material incluído e certificado.</p></div>
+  <div class="cursos">
+    <article class="curso destaque">
+      <img src="img/p11.webp" alt="Unhas stiletto pintadas com sol e lua">
+      <div>
+        <span class="tipo">1.ª edição · janeiro 2027</span>
+        <h3>The Signature Experience</h3>
+        <p>Dois dias para descobrires a tua identidade como artista: questionário pessoal, criação de unhas com moldes F1, maquilhagem, styling e sessão fotográfica profissional. Máximo de 6 artistas por experiência.</p>
+        <a class="bt" href="https://www.instagram.com/direct/t/vanessanches.nailartist/" target="_blank" rel="noopener">Pedir informações</a>
+      </div>
+    </article>
+    <article class="curso"><span class="tipo">Workshop</span><h3>Nail Expert</h3><p>A formação que ela gostava de ter tido: técnica de cutícula, moldes F1 e um serviço mais limpo, durável e rápido.</p></article>
+    <article class="curso"><span class="tipo">Curso</span><h3>F1 Essencial</h3><p>Estrutura e manutenção com moldes F1, do primeiro molde ao acabamento.</p></article>
+    <article class="curso"><span class="tipo">Workshop</span><h3>Nail Art</h3><p>Dias temáticos de pintura, presenciais ou on-line, como o Workshop de Nail Art de Natal.</p></article>
+  </div>
+  <div class="cta"><a class="bt bt-cheio" href="https://www.instagram.com/vanessanches.nailartist/" target="_blank" rel="noopener">Ver próximas datas</a></div>
+</section>
+
+<section class="sec papel2" id="contacto">
+  <div class="cab"><h2>Contacto</h2></div>
+  <div class="contato">
+    <div><h3>Local</h3><p>Blossom Beauty Academy<br><a href="https://www.google.com/maps/search/?api=1&query=Blossom+Beauty+Academy+Amora" target="_blank" rel="noopener">Amora, Seixal</a></p></div>
+    <div><h3>Marcações</h3><p><a href="https://pt.zappysoftware.com/m/blossombeautyacademy" target="_blank" rel="noopener">Agenda on-line</a><br>Escolhe o serviço e a hora</p></div>
+    <div><h3>Instagram</h3><p><a href="https://www.instagram.com/vanessanches.nailartist/" target="_blank" rel="noopener">@vanessanches.nailartist</a><br><a href="https://www.instagram.com/blossom.beautyacademy/" target="_blank" rel="noopener">@blossom.beautyacademy</a></p></div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <span class="marca">Vanessa Sanches</span>
+  Nail Art pintada à mão · Site por <a href="https://lrgz.com.br" target="_blank" rel="noopener">L R G Z</a>
+</footer>
+
+<div class="lb" id="lb" hidden><button class="x" aria-label="Fechar">Fechar ✕</button><button class="ant" aria-label="Anterior">←</button><img alt=""><button class="prox" aria-label="Seguinte">→</button></div>
+
+<script>
+const fotos=['p03','p04','p05','p06','p07','p08','p09','p10','p12','p13','p14','p15','p16','p17','p18','p19'];
+const g=document.getElementById('grade');
+g.innerHTML=fotos.map((f,i)=>`<button class="obra" data-i="${i}" aria-label="Ampliar unhas ${i+1}"><img src="img/${f}.webp" alt="Nail art de Vanessa Sanches" decoding="async"></button>`).join('');
+const lb=document.getElementById('lb'),li=lb.querySelector('img');let at=0;
+const abre=i=>{at=(i+fotos.length)%fotos.length;li.src=`img/${fotos[at]}.webp`;lb.hidden=false;requestAnimationFrame(()=>lb.classList.add('on'));document.body.style.overflow='hidden'};
+const fecha=()=>{lb.classList.remove('on');setTimeout(()=>{lb.hidden=true},300);document.body.style.overflow=''};
+g.addEventListener('click',e=>{const b=e.target.closest('.obra');if(b)abre(+b.dataset.i)});
+lb.querySelector('.x').onclick=fecha;lb.querySelector('.ant').onclick=()=>abre(at-1);lb.querySelector('.prox').onclick=()=>abre(at+1);
+lb.addEventListener('click',e=>{if(e.target===lb)fecha()});
+addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')fecha();if(e.key==='ArrowLeft')abre(at-1);if(e.key==='ArrowRight')abre(at+1)});
+let sx=0;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)abre(at+(d<0?1:-1))});
+</script>
+</body>
+</html>
