@@ -332,14 +332,18 @@ p{margin:0}
 .topo.sobre-hero{border-color:rgba(43,27,21,.14)}
 .topo.sobre-hero .nav a{color:#2b1b15}
 .topo.sobre-hero .bt-cheio{background:#2b1b15;border-color:#2b1b15;color:#f6f1ec}
-.topo.sobre-hero .m-vs{background:var(--dour-h)}
+.topo.sobre-hero .m-vs{background:linear-gradient(120deg,#6b4c26 0%,#a9824a 38%,#c9a465 50%,#8f6b3a 64%,#5e4220 100%)}
 @media (max-width:900px){
   .hero{background:linear-gradient(to bottom,rgb(240,234,230),rgb(251,250,248) 40%,rgb(246,241,236));padding-bottom:44px}
   .capa-foto{position:relative;right:auto;top:auto;bottom:auto;width:100%;height:auto;aspect-ratio:4/5;margin:-14vw 0 0;order:0;
     -webkit-mask:linear-gradient(to bottom,transparent 0,#000 14%,#000 72%,transparent 100%);mask:linear-gradient(to bottom,transparent 0,#000 14%,#000 72%,transparent 100%)}
-  .capa-foto img{object-position:72% 0}
-  .capa-topo,.capa-nome{right:auto}
-  .capa-nome .sub{text-align:right}
+  .capa-topo{right:auto;margin:88px var(--g) 0}
+  .capa-nome{right:auto;margin:10px var(--g) 0}
+  .capa-nome .sub{text-align:center;margin-top:10px;letter-spacing:.6em;text-indent:.6em}
+  .capa-topo{font-size:9.5px;letter-spacing:.24em}
+  .capa-foto{aspect-ratio:auto;height:129vw;margin:-4vw 0 0;overflow:hidden;
+    -webkit-mask:linear-gradient(to bottom,transparent 0,#000 12%,#000 76%,transparent 100%);mask:linear-gradient(to bottom,transparent 0,#000 12%,#000 76%,transparent 100%)}
+  .capa-foto img{position:absolute;width:152%;height:auto;max-width:none;left:-52vw;top:-25vw;object-fit:fill;animation:none}
   .ch-esq{margin:-10vw var(--g) 0;bottom:auto}
   .ch-dir{left:auto;flex-direction:row;display:grid;border-color:rgba(43,27,21,.18)}
   .ch-item+.ch-item{border-color:rgba(43,27,21,.18)}
