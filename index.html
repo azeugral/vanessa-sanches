@@ -13,7 +13,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%234b2d23'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23d9b77e'%3EVS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Italiana&family=Figtree:wght@300;400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/capa-vanessa.webp?v=2">
+<link rel="preload" as="image" href="img/capa-inteira.webp">
 <style>
 :root{--papel:#f3ede5;--papel2:#ebe2d6;--porcelana:#fbf8f4;--cacau:#4b2d23;--cacau2:#36201a;--tinta:#241a16;--cinza:#7a6a60;--ouro:#b08d57;--ouro2:#d9b77e;--rosa:#c98a7e;--fio:rgba(75,45,35,.15);
 --dour:linear-gradient(120deg,#8f6b3a 0%,#d9b77e 38%,#f0dcb0 50%,#c49a5f 64%,#8f6b3a 100%);
@@ -300,6 +300,50 @@ p{margin:0}
 }
 @media (max-width:420px){.topo .bt{padding:0 12px}.sub-h{letter-spacing:.16em;font-size:10.5px}.hero .acoes{margin-top:20px}.hero .acoes .bt{min-height:46px}.acoes .bt{flex:1 1 100%}.topo .logo{--vs:34px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}.entra{opacity:1;transform:none}.capa-foto img{animation:none}}
+
+/* v6: foto inteira, sem recorte. O fundo da hero continua a parede e o piso da própria foto */
+.hero{--tinta-h:#2b1b15;--dour-h:linear-gradient(120deg,#6b4c26 0%,#a9824a 38%,#c9a465 50%,#8f6b3a 64%,#5e4220 100%);color:var(--tinta-h);background:linear-gradient(to bottom,rgb(215,204,193) 0%,rgb(214,204,192) 2%,rgb(214,203,194) 4%,rgb(218,207,199) 6%,rgb(216,207,199) 8%,rgb(214,204,194) 10%,rgb(214,204,196) 12%,rgb(215,206,198) 14%,rgb(215,206,197) 16%,rgb(215,206,197) 18%,rgb(214,205,196) 20%,rgb(213,205,192) 22%,rgb(214,205,194) 24%,rgb(214,205,195) 26%,rgb(214,206,195) 28%,rgb(215,207,198) 30%,rgb(216,207,198) 32%,rgb(214,205,197) 34%,rgb(214,205,197) 36%,rgb(213,204,196) 38%,rgb(212,203,195) 40%,rgb(211,203,195) 42%,rgb(211,203,193) 44%,rgb(210,203,192) 46%,rgb(210,203,192) 48%,rgb(210,203,192) 50%,rgb(210,202,193) 52%,rgb(209,201,192) 54%,rgb(209,199,188) 56%,rgb(207,197,187) 58%,rgb(207,197,185) 60%,rgb(206,195,184) 62%,rgb(204,193,181) 64%,rgb(204,192,179) 66%,rgb(203,192,178) 68%,rgb(202,191,179) 70%,rgb(204,193,180) 72%,rgb(204,191,177) 74%,rgb(197,180,166) 76%,rgb(192,176,161) 78%,rgb(197,180,166) 80%,rgb(200,188,173) 82%,rgb(201,190,178) 84%,rgb(188,149,104) 86%,rgb(191,150,104) 88%,rgb(192,151,104) 90%,rgb(194,153,107) 92%,rgb(196,155,111) 94%,rgb(197,155,110) 96%,rgb(199,156,110) 98%,rgb(198,157,112) 100%)}
+.hero::after{opacity:.05}
+.hero .ramo{filter:none;opacity:.07}
+.hero .ramo-2{display:none}
+.capa-foto{left:auto;right:0;top:0;bottom:0;height:100%;aspect-ratio:1200/2133;transform:none;z-index:2;
+  -webkit-mask:linear-gradient(to right,transparent 0,#000 34%);mask:linear-gradient(to right,transparent 0,#000 34%)}
+.capa-foto img{object-fit:cover;object-position:50% 100%;filter:none}
+.capa-topo,.capa-nome,.chamada,.ch-detalhe{z-index:3}
+.capa-topo{color:#7a604a;border-color:rgba(43,27,21,.22)}
+.capa-nome .m-nome{background:var(--dour-h);background-size:220% 100%;mix-blend-mode:multiply}
+.capa-nome .sub{color:#8a6638}
+.ch-num{color:#8a6638}
+.ch-grande{color:var(--tinta-h)}
+.ch-grande em{color:#9a7440}
+.ch-esq p{color:#5b4639}
+.ch-dir{right:auto;left:var(--g);top:clamp(270px,36vh,340px);text-align:left;flex-direction:row;gap:44px;width:auto}
+.ch-item b{color:var(--tinta-h);font-size:clamp(22px,1.8vw,28px)}
+.ch-item span{color:#7a604a}
+.ch-item i{color:#8a6638}
+.ch-detalhe{display:none}
+.ch-esq{bottom:max(150px,19vh)}
+.capa-topo,.capa-nome{right:calc(100svh*1200/2133 - 4vw);max-width:none;margin:0}
+.capa-nome .sub{text-align:left}
+.hero .bt-claro{border-color:var(--tinta-h);color:var(--tinta-h)}
+.hero .bt-claro:hover{background:var(--tinta-h);color:#f6f1ec}
+.hero .bt-ouro{background:var(--tinta-h);border-color:var(--tinta-h);color:#f6f1ec}
+.hero .bt-ouro:hover{background:#4b2d23;border-color:#4b2d23;color:#fff}
+.topo.sobre-hero{border-color:rgba(43,27,21,.14)}
+.topo.sobre-hero .nav a{color:#2b1b15}
+.topo.sobre-hero .bt-cheio{background:#2b1b15;border-color:#2b1b15;color:#f6f1ec}
+.topo.sobre-hero .m-vs{background:var(--dour-h)}
+@media (max-width:900px){
+  .hero{background:linear-gradient(to bottom,rgb(240,234,230),rgb(251,250,248) 40%,rgb(246,241,236));padding-bottom:44px}
+  .capa-foto{position:relative;right:auto;top:auto;bottom:auto;width:100%;height:auto;aspect-ratio:4/5;margin:-14vw 0 0;order:0;
+    -webkit-mask:linear-gradient(to bottom,transparent 0,#000 14%,#000 72%,transparent 100%);mask:linear-gradient(to bottom,transparent 0,#000 14%,#000 72%,transparent 100%)}
+  .capa-foto img{object-position:72% 0}
+  .capa-topo,.capa-nome{right:auto}
+  .capa-nome .sub{text-align:right}
+  .ch-esq{margin:-10vw var(--g) 0;bottom:auto}
+  .ch-dir{left:auto;flex-direction:row;display:grid;border-color:rgba(43,27,21,.18)}
+  .ch-item+.ch-item{border-color:rgba(43,27,21,.18)}
+}
 </style>
 </head>
 <body>
@@ -317,7 +361,7 @@ p{margin:0}
   <img class="ramo ramo-2" src="img/sombra-ramo.webp" alt="" aria-hidden="true">
   <div class="capa-topo entra" aria-hidden="true"><span>Edição nº 01</span><span>Amora · Portugal</span></div>
   <h1 class="capa-nome entra" aria-label="Vanessa Sanches, Nail Artist"><span class="m-nome"></span><span class="sub">NAIL ARTIST</span></h1>
-  <div class="capa-foto"><img src="img/capa-vanessa.webp?v=2" alt="Vanessa Sanches, nail artist" fetchpriority="high"></div>
+  <div class="capa-foto"><img src="img/capa-inteira.webp" alt="Vanessa Sanches, nail artist" fetchpriority="high"></div>
   <div class="chamada ch-esq entra d2">
     <span class="ch-num">Na capa</span>
     <div class="ch-grande">Pintado<em>à mão</em></div>
